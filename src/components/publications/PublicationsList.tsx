@@ -231,7 +231,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </p>
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3 flex flex-wrap items-center gap-x-2 gap-y-1">
   <span>
-    {pub.journal || pub.conference} {pub.year}
+    {pub.journal || pub.conference}
+    {pub.volume ? ` ${pub.volume}` : ''}
+    {pub.pages ? `, ${pub.pages}` : ''}
+    {` ${pub.year}`}
   </span>
 
   {(pub.url || pub.doi) && (
@@ -287,15 +290,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 {messages.publications.abstract}
                                             </button>
                                         )}
-                                        {pub.bibtex && (
-                                            <button
-                                                onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
-                                                className={cn(
-                                                    "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
-                                                    expandedBibtexId === pub.id
-                                                        ? "bg-accent text-white"
-                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
-                                                )}
+                                       
                                             >
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
                                                 {messages.publications.bibtex}
@@ -319,31 +314,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 </div>
                                             </motion.div>
                                         ) : null}
-                                        {expandedBibtexId === pub.id && pub.bibtex ? (
-                                            <motion.div
-                                                key="bibtex"
-                                                initial={{ opacity: 0, height: 0 }}
-                                                animate={{ opacity: 1, height: 'auto' }}
-                                                exit={{ opacity: 0, height: 0 }}
-                                                className="overflow-hidden mt-4"
-                                            >
-                                                <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                                                    <pre className="text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
-                                                        {pub.bibtex}
-                                                    </pre>
-                                                    <button
-                                                        onClick={() => {
-                                                            navigator.clipboard.writeText(pub.bibtex || '');
-                                                            // Optional: Show copied feedback
-                                                        }}
-                                                        className="absolute top-2 right-2 p-1.5 rounded-md bg-white dark:bg-neutral-700 text-neutral-500 hover:text-accent shadow-sm border border-neutral-200 dark:border-neutral-600 transition-colors"
-                                                        title={messages.common.copyToClipboard}
-                                                    >
-                                                        <ClipboardDocumentIcon className="h-4 w-4" />
-                                                    </button>
-                                                </div>
-                                            </motion.div>
-                                        ) : null}
+                                 
                                     </AnimatePresence>
                                 </div>
                             </div>
