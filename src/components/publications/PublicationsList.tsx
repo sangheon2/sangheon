@@ -231,9 +231,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3 flex flex-wrap items-center gap-x-2 gap-y-1">
   <span>
     {pub.journal || pub.conference}
-    {pub.volume ? ` ${pub.volume}` : ''}
-    {pub.pages ? `, ${pub.pages}` : ''}
-    {` ${pub.year}`}
+  {pub.volume && `Vol. ${pub.volume}`}
+  {pub.pages && `, pp. ${pub.pages}`}
+  {pub.year && ` (${pub.year})`}
   </span>
 
   {(pub.url || pub.doi) && (
