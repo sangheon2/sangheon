@@ -1,11 +1,9 @@
-type = "about"
-title = "About"
+type = "Education"
+title = "Education"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Flexible/Wearable Electronics", "Bio-Integrated Electronics", "Electrochemical biosensors", "2D material synthesis", "Multiscale Biointerfaces", "Tissue Engineering" , "Electrochemistry", "Energy Harvesting Devices"
 ]
 
 [[sections]]
