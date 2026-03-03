@@ -1,7 +1,3 @@
 title = "Research"
-type = "about"
-
-[[sections]]
-id = "overview"
-type = "markdown"
+type = "text"
 source = "Research.md"
