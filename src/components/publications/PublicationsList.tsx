@@ -260,7 +260,7 @@ export default function PublicationsList({
                       </span>
                     ))}
                   </p>
-<p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3 flex flex-wrap items-center gap-x-1 gap-y-1">
+<p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
   <span className="italic font-semibold">
     {pub.journal || pub.conference}
   </span>
