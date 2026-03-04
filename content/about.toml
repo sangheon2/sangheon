@@ -12,6 +12,8 @@ type = "markdown"
 source = "Education.md"
 title = "About"
 
+
+[[sections]]
 id = "Honors and Awards"
 type = "markdown"
 title = "Honors and Awards"
