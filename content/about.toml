@@ -20,8 +20,8 @@ filter = "selected"
 limit = 5
 
 [[sections]]
-id = "news"
+id = "Honors and Awards"
 type = "list"
-title = "News"
-source = "news.toml"
+title = "Honors and Awards"
+source = "Honors and Awards"
 
