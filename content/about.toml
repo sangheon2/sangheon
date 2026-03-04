@@ -17,5 +17,5 @@ title = "About"
 id = "Honors and Awards"
 type = "list"
 title = "Honors and Awards"
-source = "Honors and Awards"
+source = "Honors and Awards.md"
 
