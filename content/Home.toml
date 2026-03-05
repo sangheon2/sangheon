@@ -1,5 +1,5 @@
-title = "About"
-type = "about"
+title = "Home"
+type = "home"
 
 [profile]
 research_interests = [
@@ -10,6 +10,13 @@ research_interests = [
   "Multiscale Biointerfaces",
   "Tissue Engineering",
 ]
+
+[[sections]]
+id = "About"
+type = "markdown"
+title = "About"
+source = "About.md"
+
 
 [[sections]]
 id = "Education"
