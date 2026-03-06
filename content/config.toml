@@ -43,26 +43,26 @@ en = "English"
 [[navigation]]
 title = "Main"
 type = "page"
-target = "Main"
-href = "/"
+target = "main"
+href = "/main"
 
 [[navigation]]
 title = "Publications"
 type = "page"
-target = "Publications"
+target = "publications"
 href = "/publications"
 
 [[navigation]]
 title = "Research"
 type = "page"
-target = "Research"
-href = "/Research"
+target = "research"
+href = "/research"
 
 [[navigation]]
 title = "Scheme/Figure"
 type = "page"
-target = "Scheme/Figure"
-href = "/Scheme/Figure"
+target = "scheme/Figure"
+href = "/scheme/Figure"
 
 [publications]
 highlight_name = "S. Jeon"
