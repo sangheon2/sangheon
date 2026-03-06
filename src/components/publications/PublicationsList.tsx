@@ -9,7 +9,7 @@ import {
   BookOpenIcon,
 } from '@heroicons/react/24/outline';
 
-import { Publication } from '@/types/publication';
+import { Publication } from '@/types/Publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
