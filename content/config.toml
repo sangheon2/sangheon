@@ -43,7 +43,7 @@ en = "English"
 [[navigation]]
 title = "Main"
 type = "page"
-target = "Main"
+target = "about"
 href = "/"
 
 [[navigation]]
