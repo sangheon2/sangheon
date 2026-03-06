@@ -1,5 +1,5 @@
 type = "Publication"
 title = "Publications"
 description = "A collection of my research work."
-source = "Publications.bib"
+source = "publications.bib"
 show_bibtex = false
