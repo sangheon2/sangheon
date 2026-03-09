@@ -34,23 +34,25 @@ export default function ResearchHighlights({ items }: Props) {
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-11 border border-neutral-300 bg-[#f5f0dd]">
           <div className="grid grid-cols-12 min-h-[560px]">
-<div className="lg:col-span-5 relative min-h-[320px] lg:min-h-[520px] bg-white">
-  <Image
-    src={active.image}
-    alt={active.title}
-    fill
-    className="object-contain p-6"
+            <div className="col-span-5 relative min-h-[560px] bg-white">
+              <Image
+                src={active.image}
+                alt={active.title}
+                fill
+                className="object-contain p-6"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                priority
               />
             </div>
 
             <div className="col-span-7 p-10 flex flex-col">
-              <h3 className="text-5xl font-bold leading-tight mb-6">
+              <h3 className="text-4xl font-bold leading-tight mb-6">
                 {active.title}
               </h3>
 
               <div className="h-px bg-neutral-500 mb-8" />
 
-              <p className="text-2xl leading-relaxed text-neutral-800 mb-8">
+              <p className="text-lg leading-relaxed text-neutral-800 mb-8">
                 {active.summary}
               </p>
 
@@ -58,7 +60,12 @@ export default function ResearchHighlights({ items }: Props) {
                 <p className="text-xl font-semibold mb-1">Related paper</p>
                 <p className="text-lg text-neutral-800">
                   {active.paper_title}
-                  {active.journal && <> , <span className="italic">{active.journal}</span></>}
+                  {active.journal && (
+                    <>
+                      {' '}
+                      , <span className="italic">{active.journal}</span>
+                    </>
+                  )}
                   {active.volume && <> {active.volume}</>}
                   {active.pages && <> , {active.pages}</>}
                   {active.year && <> ({active.year})</>}
