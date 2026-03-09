@@ -1,5 +1,5 @@
-title = "Main"
-type = "main"
+title = "About"
+type = "about"
 
 [profile]
 research_interests = [
@@ -12,11 +12,10 @@ research_interests = [
 ]
 
 [[sections]]
-id = "Research experince"
+id = "Research experience"
 type = "markdown"
-title = "Research experince"
+title = "Research experience"
 source = "Research experince.md"
-
 
 [[sections]]
 id = "Education"
