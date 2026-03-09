@@ -34,12 +34,12 @@ export default function ResearchHighlights({ items }: Props) {
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-11 border border-neutral-300 bg-[#f5f0dd]">
           <div className="grid grid-cols-12 min-h-[560px]">
-            <div className="col-span-5 relative min-h-[560px]">
-              <Image
-                src={active.image}
-                alt={active.title}
-                fill
-                className="object-cover"
+<div className="lg:col-span-5 relative min-h-[320px] lg:min-h-[520px]">
+  <Image
+    src={active.image}
+    alt={active.title}
+    fill
+    className="object-cover"
               />
             </div>
 
