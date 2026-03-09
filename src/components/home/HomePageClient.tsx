@@ -11,7 +11,6 @@ import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
 import { CardPageConfig, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
-import ResearchHighlights, { HighlightItem } from '@/components/home/ResearchHighlights';
 
 interface SectionConfig {
   id: string;
@@ -94,7 +93,6 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
-      <ResearchHighlights items={highlightItems} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-1">
           <Profile
