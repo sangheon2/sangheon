@@ -1,58 +1,26 @@
-'use client';
-
-import ResearchHighlights, { HighlightItem } from '@/components/home/ResearchHighlights';
-
-export default function HomeLanding() {
-  const highlightItems: HighlightItem[] = [
-    {
-      id: 1,
-      title: 'A 3D Printable Tissue Adhesive',
-      image: '/highlights/highlight1.jpg',
-      summary:
-        'Tissue adhesives are promising alternatives to sutures and staples, but existing adhesives mostly take the forms of glues or hydrogels with limited versatility.',
-      paper_title: 'A 3D Printable Tissue Adhesive',
-      journal: 'Nature Communications',
-      volume: '15',
-      pages: '1215',
-      year: '2024',
-      link: 'https://doi.org/',
-    },
-    {
-      id: 2,
-      title: 'Wearable Electrochemical Biosensor Platform',
-      image: '/highlights/highlight2.jpg',
-      summary:
-        'We developed a wearable electrochemical sensing platform for real-time biomarker monitoring with improved mechanical stability and signal reliability.',
-      paper_title: 'Wearable Electrochemical Biosensor Platform',
-      journal: 'Advanced Materials',
-      year: '2025',
-      link: 'https://doi.org/',
-    },
-    {
-      id: 3,
-      title: 'Microneedle-Based Biointerface System',
-      image: '/highlights/highlight3.jpg',
-      summary:
-        'A microneedle-integrated bioelectronic system was designed for efficient biofluid access and sensitive biomarker detection.',
-      paper_title: 'Microneedle-Based Biointerface System',
-      journal: 'Biosensors and Bioelectronics',
-      year: '2025',
-      link: 'https://doi.org/',
-    },
-  ];
-
-  return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
-      <ResearchHighlights items={highlightItems} />
-
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">Latest News</h2>
-        <div className="rounded-lg border border-neutral-200 bg-white p-6">
-          <p className="text-neutral-600">
-            Add your latest research news, awards, invited talks, and updates here.
-          </p>
-        </div>
-      </section>
-    </main>
-  );
-}
+const highlightItems = [
+  {
+    id: 1,
+    title: 'Flexible Bioelectronic Interface',
+    image: '/FPCB.jpg',
+    summary:
+      'A flexible printed circuit board designed for wearable bioelectronic systems. The compact architecture enables seamless integration with biosensors and wireless modules for real-time physiological monitoring.',
+    paper_title:
+      'A Wearable Electrochemical Biosensor for Salivary Detection of Periodontal Inflammation Biomarkers: Molecularly Imprinted Polymer Sensor with Deep Learning Integration',
+    journal: 'Advanced Science',
+    year: '2025',
+    link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658',
+  },
+  {
+    id: 2,
+    title: 'Portable MIP-Based POCT Biosensing System',
+    image: '/POCT.png',
+    summary:
+      'A portable point-of-care testing system integrating molecularly imprinted polymer biosensors, disposable sensing cartridges, and smartphone-based electrochemical analysis for rapid salivary biomarker detection.',
+    paper_title:
+      'A Wearable Electrochemical Biosensor for Salivary Detection of Periodontal Inflammation Biomarkers: Molecularly Imprinted Polymer Sensor with Deep Learning Integration',
+    journal: 'Advanced Science',
+    year: '2025',
+    link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658',
+  },
+];
