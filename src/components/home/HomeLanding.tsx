@@ -45,11 +45,11 @@ export default function HomeLanding() {
     <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
       <ResearchHighlights items={highlightItems} />
 
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold mb-4">News & Updates</h2>
-        <div className="border border-neutral-200 rounded-lg p-6 bg-white">
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold mb-4">Latest News</h2>
+        <div className="rounded-lg border border-neutral-200 bg-white p-6">
           <p className="text-neutral-600">
-            Add your latest research news, awards, presentations, and updates here.
+            Add your latest research news, awards, invited talks, and updates here.
           </p>
         </div>
       </section>
