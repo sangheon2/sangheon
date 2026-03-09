@@ -1,14 +1,13 @@
 [[items]]
 id = 1
-title = "A 3D Printable Tissue Adhesive"
-image = "/highlights/highlight1.jpg"
-summary = "Tissue adhesives are promising alternative to sutures and staples, but existing adhesives mostly take the forms of glues or hydrogels with limited versatility."
-paper_title = "A 3D Printable Tissue Adhesive"
-journal = "Nature Communications"
-volume = "15"
-pages = "1215"
-year = "2024"
-link = "https://doi.org/..."
+title = "Flexible Bioelectronic Interface"
+image = "/FPCB"
+summary = "A flexible printed circuit board designed for wearable bioelectronic systems. The compact architecture enables seamless integration with biosensors and wireless modules for real-time physiological monitoring."
+paper_title = "Wearable Electrochemical Biosensing Platform"
+journal = "Advanced Science"
+year = "2025"
+
+link = "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658"
 
 [[items]]
 id = 2
