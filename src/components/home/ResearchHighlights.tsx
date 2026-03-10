@@ -37,9 +37,9 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
   };
 
   return (
-    <section className="w-full pt-4">
+    <section className="w-full pt-1">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-4 border-b border-neutral-300 pb-3">
+        <div className="mb-3 border-b border-neutral-300 pb-2">
           <h2 className="text-2xl md:text-3xl font-light tracking-tight text-neutral-900">
             Research Highlights
           </h2>
@@ -121,24 +121,24 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
             </div>
           </div>
 
-          <div className="flex lg:flex-col gap-1 lg:gap-1">
-            {items.map((item, idx) => {
-              const isActive = idx === activeIndex;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => setActiveIndex(idx)}
-                  className={`h-7 w-7 lg:h-8 lg:w-[44px] text-xs font-medium border border-neutral-500 transition-colors ${
-                    isActive
-                      ? 'bg-neutral-800 text-white'
-                      : 'bg-neutral-500 text-white hover:bg-neutral-700'
-                  }`}
-                >
-                  {idx + 1}
-                </button>
-              );
-            })}
-          </div>
+<div className="flex lg:flex-col items-start gap-1">
+  {items.map((item, idx) => {
+    const isActive = idx === activeIndex;
+    return (
+      <button
+        key={item.id}
+        onClick={() => setActiveIndex(idx)}
+        className={`flex h-8 w-8 lg:h-8 lg:w-8 shrink-0 items-center justify-center text-xs font-medium border border-neutral-500 transition-colors ${
+          isActive
+            ? 'bg-neutral-800 text-white'
+            : 'bg-neutral-500 text-white hover:bg-neutral-700'
+        }`}
+      >
+        {idx + 1}
+      </button>
+    );
+  })}
+</div>
         </div>
       </div>
     </section>
