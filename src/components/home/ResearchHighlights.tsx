@@ -68,7 +68,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
               </div>
 
               <div className="lg:col-span-7 h-[520px] p-5 md:p-6 lg:p-7 flex flex-col relative overflow-hidden">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-neutral-900 mb-5">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-neutral-900 mb-3">
                   {active.title}
                 </h3>
 
