@@ -65,7 +65,7 @@ const highlightItems = [
     link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658',
   },
     {
-    id: 5,
+    id: 6,
     title: 'Flexible Bioelectronic Interface',
     image: '/SE.png',
     summary:
@@ -78,7 +78,7 @@ const highlightItems = [
   },
 
     {
-    id: 5,
+    id: 7,
     title: 'Flexible Bioelectronic Interface',
     image: '/go w.png',
     summary:
@@ -90,6 +90,18 @@ const highlightItems = [
     link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658',
   },
   
+    {
+    id: 7,
+    title: 'Flexible Bioelectronic Interface',
+    image: '/SERS.png',
+    summary:
+      'A flexible printed circuit board designed for wearable bioelectronic systems. The compact architecture enables seamless integration with biosensors and wireless modules for real-time physiological monitoring.',
+    paper_title:
+      'A Wearable Electrochemical Biosensor for Salivary Detection of Periodontal Inflammation Biomarkers: Molecularly Imprinted Polymer Sensor with Deep Learning Integration',
+    journal: 'Advanced Science',
+    year: '2025',
+    link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202509658',
+  }
   
 ];
 
