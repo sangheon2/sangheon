@@ -68,7 +68,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
               </div>
 
               <div className="lg:col-span-7 p-6 md:p-8 lg:p-10 flex flex-col relative">
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-neutral-900 mb-5">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-neutral-900 mb-5">
                   {active.title}
                 </h3>
 
@@ -93,7 +93,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
                     Related paper
                   </p>
 
-                  <p className="text-base md:text-lg text-neutral-800">
+               <p className="text-sm md:text-base text-neutral-800">
                     {active.paper_title}
                     {active.journal && (
                       <>
