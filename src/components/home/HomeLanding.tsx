@@ -107,7 +107,48 @@ const highlightItems = [
     link: 'https://onlinelibrary.wiley.com/doi/10.1002/smll.202105733',
   },
 
+   {
+    id: 9,
+    title: 'Microbrush-Based Triboelectric Energy Harvesting Platform',
+    image: 'TENG.png',
+    summary:
+      'A microbrush-structured triboelectric nanogenerator designed for flexible and wearable energy harvesting. Arrays of microfiber brushes create stable contact and sliding interactions with counter surfaces, enabling efficient triboelectric charge generation through contact–sliding motion. This architecture improves durability and electrical output, providing a promising platform for self-powered wearable electronics and human-interactive sensing systems.',
+    paper_title:
+      'Sustainable and flexible microbrush-faced triboelectric generator for portable/wearable applications',
+    journal: 'Advanced Materials',
+    year: '2021',
+    link: 'https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202102530',
+  },
 
+   {
+    id: 10,
+    title: 'Aligned Graphene Nanoribbon Fabrication Platform',
+    image: 'GNR.png',
+    summary:
+      'A scalable nanofabrication strategy for producing highly aligned graphene nanoribbon (GNR) arrays.
+Electrospun polymer nanowires are employed as etch-mask templates to pattern graphene through oxygen plasma etching, enabling controlled ribbon width and spatial alignment. This approach provides a simple route for large-area GNR fabrication, offering promising opportunities for graphene electronics and nanoscale sensing devices.',
+    paper_title:
+      'Highly aligned polymeric nanowire etch-mask lithography enabling the integration of graphene nanoribbon transistors',
+    journal: 'Nanomaterials',
+    year: '2021',
+    link: 'https://www.mdpi.com/2079-4991/11/1/33',
+  },
+
+        
+   {
+    id: 11,
+    title: 'Nanodot-Patterned Textile Triboelectric Energy Harvester',
+    image: 'TENG_W.png',
+    summary:
+      'A nanodot-patterned textile platform designed for wearable triboelectric energy harvesting. The nanostructured surface increases the effective contact area between triboelectric layers, enhancing charge generation during human motion. Integrated into flexible fabrics, the system enables efficient mechanical-to-electrical energy conversion for self-powered wearable electronics and smart clothing applications.',
+    paper_title:
+      'Versatile nanodot-patterned Gore-Tex fabric for multiple energy harvesting in wearable and aerodynamic nanogenerators',
+    journal: 'Nano Energy',
+    year: '2018',
+    link: 'https://www.sciencedirect.com/science/article/pii/S2211285518307110?dgcid=rss_sd_all',
+  },
+
+  
  
 ];
 
