@@ -67,7 +67,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
                 </button>
               </div>
 
-              <div className="lg:col-span-7 p-6 md:p-8 lg:p-10 flex flex-col relative">
+              <div className="lg:col-span-7 h-[520px] p-6 md:p-8 lg:p-10 flex flex-col relative overflow-hidden">
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-neutral-900 mb-5">
                   {active.title}
                 </h3>
