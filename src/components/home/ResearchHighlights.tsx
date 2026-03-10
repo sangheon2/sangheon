@@ -121,14 +121,14 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
             </div>
           </div>
 
-<div className="col-span-12 lg:col-span-1 flex lg:flex-col gap-1">
+<div className="col-span-12 lg:col-span-[40px] flex lg:flex-col gap-1">
   {items.map((item, idx) => {
     const isActive = idx === activeIndex;
     return (
       <button
         key={item.id}
         onClick={() => setActiveIndex(idx)}
-        className={`h-8 w-8 lg:h-9 lg:w-full text-xs font-medium border border-neutral-500 transition-colors ${
+        className={`h-7 w-7 lg:h-8 lg:w-full text-xs font-medium border border-neutral-500 transition-colors ${
           isActive
             ? 'bg-neutral-800 text-white'
             : 'bg-neutral-500 text-white hover:bg-neutral-700'
