@@ -37,7 +37,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
   };
 
   return (
-    <section className="w-full pt-10">
+    <section className="w-full pt-4">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-6 border-b border-neutral-300 pb-4">
           <h2 className="text-3xl md:text-4xl font-light tracking-tight text-neutral-900">
@@ -67,7 +67,7 @@ export default function ResearchHighlights({ items }: ResearchHighlightsProps) {
                 </button>
               </div>
 
-              <div className="lg:col-span-7 h-[520px] p-6 md:p-8 lg:p-10 flex flex-col relative overflow-hidden">
+              <div className="lg:col-span-7 h-[520px] p-5 md:p-6 lg:p-7 flex flex-col relative overflow-hidden">
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-neutral-900 mb-5">
                   {active.title}
                 </h3>
