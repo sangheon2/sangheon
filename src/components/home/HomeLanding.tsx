@@ -46,7 +46,7 @@ const highlightItems = [
     title: 'Multistacked Graphene Device Platform',
     image: '/Graphene.png',
     summary:
-'A multistacked graphene platform engineered for high-performance electronic device integration. The structure combines selectively patterned bilayer graphene channels with monolayer graphene electrodes grown by copper-pocket-assisted chemical vapor deposition, enabling stable carrier transport and low contact resistance. The stacked graphene architecture exhibits high electrical conductivity (>10^3 S m⁻¹) and scalable wafer-level device fabrication, providing a robust platform for next-generation graphene electronics and sensing devices.'    
+'A multistacked graphene platform engineered for high-performance electronic device integration. The structure combines selectively patterned bilayer graphene channels with monolayer graphene electrodes grown by copper-pocket-assisted chemical vapor deposition, enabling stable carrier transport and low contact resistance. The stacked graphene architecture exhibits high electrical conductivity (>10^3 S m⁻¹) and scalable wafer-level device fabrication, providing a robust platform for next-generation graphene electronics and sensing devices.',    
     paper_title:
       'Multistacked graphene grown by copper-pocket-assisted chemical vapor deposition for versatile device integration',
     journal: 'ACS Applied Nano Materials ',
@@ -60,7 +60,7 @@ const highlightItems = [
     title: 'Hierarchically Structured Nanoporous Gold Platform',
     image: '/SERS.png',
     summary:
-'A hierarchically structured nanoporous gold (NPG) platform engineered for high-performance plasmonic sensing. The bicontinuous ligament–pore architecture with nanoscale features (~20–50 nm) generates dense electromagnetic hot spots that significantly enhance localized surface plasmon resonance (LSPR). As a result, the platform enables highly sensitive surface-enhanced Raman scattering (SERS) detection with signal enhancement factors exceeding 10^6, providing ultrasensitive molecular detection for chemical and biological sensing applications.'    
+'A hierarchically structured nanoporous gold (NPG) platform engineered for high-performance plasmonic sensing. The bicontinuous ligament–pore architecture with nanoscale features (~20–50 nm) generates dense electromagnetic hot spots that significantly enhance localized surface plasmon resonance (LSPR). As a result, the platform enables highly sensitive surface-enhanced Raman scattering (SERS) detection with signal enhancement factors exceeding 10^6, providing ultrasensitive molecular detection for chemical and biological sensing applications.',    
     paper_title:
       'Guided wrinkling of hierarchically structured nanoporous gold films for improved surface-enhanced Raman scattering performance',
     journal: 'Advanced Materials Interfaces',
@@ -72,7 +72,7 @@ const highlightItems = [
     title: 'Wrinkled Graphene Nanostructure Platform',
     image: '/go w.png',
     summary:
-'A wrinkled graphene nanostructure engineered for high-surface-area electronic and sensing applications. The crumpled graphene morphology introduces dense nanoscale wrinkles and edge defects, significantly increasing the electrochemically active surface area and facilitating efficient charge transfer. The hierarchical graphene architecture exhibits enhanced antibacterial activity and improved electron transport, providing a versatile platform for high-sensitivity chemical sensing and biointerface applications.'    
+'A wrinkled graphene nanostructure engineered for high-surface-area electronic and sensing applications. The crumpled graphene morphology introduces dense nanoscale wrinkles and edge defects, significantly increasing the electrochemically active surface area and facilitating efficient charge transfer. The hierarchical graphene architecture exhibits enhanced antibacterial activity and improved electron transport, providing a versatile platform for high-sensitivity chemical sensing and biointerface applications.',    
     paper_title:
       'Improved antibacterial activity of 3D wrinkled graphene oxide films implemented with irreversibly shrinkable shape-memory polymer substrate',
     journal: 'Environmental Science: Nano',
@@ -85,7 +85,7 @@ const highlightItems = [
     title: 'Microstructured Dome Array Platform',
     image: '/MICRO.png',
     summary:
-'A photolithography-based microfabrication strategy enabling the formation of periodic microlens array (MLA) architectures with micrometer-scale dome structures. The hemispherical microstructures are produced through precise photoresist patterning and thermal reflow processes, forming highly ordered lens arrays that enhance optical coupling and light extraction efficiency. The microstructured surface also increases interfacial contact area, enabling improved optical sensing and microdevice integration. Importantly, the lithographic process supports wafer-scale patterning and scalable manufacturing, providing a practical platform for large-area optical devices, micro-optoelectronics, and sensing interfaces.'      
+'A photolithography-based microfabrication strategy enabling the formation of periodic microlens array (MLA) architectures with micrometer-scale dome structures. The hemispherical microstructures are produced through precise photoresist patterning and thermal reflow processes, forming highly ordered lens arrays that enhance optical coupling and light extraction efficiency. The microstructured surface also increases interfacial contact area, enabling improved optical sensing and microdevice integration. Importantly, the lithographic process supports wafer-scale patterning and scalable manufacturing, providing a practical platform for large-area optical devices, micro-optoelectronics, and sensing interfaces.',      
     paper_title:
       'A Wearable Electrochemical Biosensor for Salivary Detection of Periodontal Inflammation Biomarkers: Molecularly Imprinted Polymer Sensor with Deep Learning Integration',
     journal: 'Microsystems & Nanoengineering',
@@ -152,7 +152,7 @@ const highlightItems = [
     title: 'Nanodot-Patterned Textile Triboelectric Energy Harvester',
     image: 'TENG_W.png',
     summary:
-'A nanodot-patterned textile platform designed for wearable triboelectric energy harvesting. The nanoscale surface structures increase the effective contact area between triboelectric layers, significantly enhancing charge density during mechanical deformation. Integrated with breathable textile substrates such as Gore-Tex fabrics, the system enables efficient mechanical-to-electrical energy conversion for self-powered wearable electronics and smart textile applications.'    
+'A nanodot-patterned textile platform designed for wearable triboelectric energy harvesting. The nanoscale surface structures increase the effective contact area between triboelectric layers, significantly enhancing charge density during mechanical deformation. Integrated with breathable textile substrates such as Gore-Tex fabrics, the system enables efficient mechanical-to-electrical energy conversion for self-powered wearable electronics and smart textile applications.',    
      paper_title:
       'Versatile nanodot-patterned Gore-Tex fabric for multiple energy harvesting in wearable and aerodynamic nanogenerators',
     journal: 'Nano Energy',
