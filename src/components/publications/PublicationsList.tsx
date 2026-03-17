@@ -196,16 +196,16 @@ export default function PublicationsList({
               className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900"
             >
               <div className="flex flex-col gap-5 md:flex-row">
-                <div className="w-full flex-shrink-0 md:w-[160px]">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-800">
+               <div className="w-full flex-shrink-0 md:w-[240px]">
+  <div className="relative h-full min-h-[170px] overflow-hidden rounded-md border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-800">
                     {pub.preview ? (
-                      <Image
-                        src={`/papers/${pub.preview}`}
-                        alt={pub.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 160px"
-                      />
+<Image
+  src={`/papers/${pub.preview}`}
+  alt={pub.title}
+  fill
+  className="object-cover object-center"
+  sizes="(max-width: 768px) 100vw, 240px"
+/>
                     ) : (
                       <div className="flex h-full w-full items-center justify-center text-xs text-neutral-400">
                         No image
