@@ -185,133 +185,137 @@ export default function PublicationsList({
       </div>
 
       <div className="space-y-6">
-        {filteredPublications.length === 0 ? (
-          <div className="text-center py-12 text-neutral-500">
-            {messages.publications.noResults}
+{filteredPublications.length === 0 ? (
+  <div className="text-center py-12 text-neutral-500">
+    {messages.publications.noResults}
+  </div>
+) : (
+  filteredPublications.map((pub, index) => (
+    <div
+      key={pub.id}
+      className="bg-white dark:bg-neutral-900 p-5 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+    >
+      <div className="flex flex-col md:flex-row gap-5">
+        <div className="w-full md:w-[160px] flex-shrink-0">
+          <div className="relative aspect-[4/3] rounded-md overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-800">
+            {pub.preview ? (
+              <Image
+                src={`/papers/${pub.preview}`}
+                alt={pub.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 160px"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-xs text-neutral-400">
+                No image
+              </div>
+            )}
           </div>
-        ) : (
-          filteredPublications.map((pub) => (
-            <div
-              key={pub.id}
-              className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
-            >
-              <div className="flex flex-col md:flex-row gap-6">
-                {pub.preview && (
-                  <div className="w-full md:w-48 flex-shrink-0">
-                    <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-                      <Image
-                        src={`/papers/${pub.preview}`}
-                        alt={pub.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                  </div>
+        </div>
+
+        <div className="flex-grow">
+          <div className="text-sm font-medium text-neutral-500 mb-2">
+            {filteredPublications.length - index}.
+          </div>
+
+          <h3
+            className={`${
+              embedded ? 'text-lg' : 'text-xl'
+            } font-semibold text-primary mb-2 leading-tight`}
+          >
+            {pub.title}
+          </h3>
+
+          <p
+            className={`${
+              embedded ? 'text-sm' : 'text-base'
+            } text-neutral-600 dark:text-neutral-400 mb-2`}
+          >
+            {pub.authors.map((author, idx) => (
+              <span key={idx}>
+                <span
+                  className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${
+                    author.isCoAuthor
+                      ? `underline underline-offset-4 ${
+                          author.isHighlighted
+                            ? 'decoration-accent'
+                            : 'decoration-neutral-400'
+                        }`
+                      : ''
+                  }`}
+                >
+                  {author.name}
+                </span>
+
+                {author.isCorresponding && (
+                  <sup
+                    className={`ml-0 ${
+                      author.isHighlighted
+                        ? 'text-accent'
+                        : 'text-neutral-600 dark:text-neutral-400'
+                    }`}
+                  >
+                    †
+                  </sup>
                 )}
 
-                <div className="flex-grow">
-                  <h3
-                    className={`${
-                      embedded ? 'text-lg' : 'text-xl'
-                    } font-semibold text-primary mb-2 leading-tight`}
-                  >
-                    {pub.title}
-                  </h3>
+                {idx < pub.authors.length - 1 && ', '}
+              </span>
+            ))}
+          </p>
 
-                  <p
-                    className={`${
-                      embedded ? 'text-sm' : 'text-base'
-                    } text-neutral-600 dark:text-neutral-400 mb-2`}
-                  >
-                    {pub.authors.map((author, idx) => (
-                      <span key={idx}>
-                        <span
-                          className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${
-                            author.isCoAuthor
-                              ? `underline underline-offset-4 ${
-                                  author.isHighlighted
-                                    ? 'decoration-accent'
-                                    : 'decoration-neutral-400'
-                                }`
-                              : ''
-                          }`}
-                        >
-                          {author.name}
-                        </span>
+          <p className="text-sm font-medium text-neutral-800 dark:text-neutral-300 mb-3">
+            <span className="italic font-semibold">
+              {pub.journal || pub.conference}
+            </span>
+            {pub.volume && `, ${pub.volume}`}
+            {pub.pages && `, ${pub.pages}`}
+            {pub.year && ` (${pub.year})`}
 
-                        {author.isCorresponding && (
-                          <sup
-                            className={`ml-0 ${
-                              author.isHighlighted
-                                ? 'text-accent'
-                                : 'text-neutral-600 dark:text-neutral-400'
-                            }`}
-                          >
-                            †
-                          </sup>
-                        )}
+            {(pub.url || pub.doi) && (
+              <a
+                href={pub.url ?? `https://doi.org/${pub.doi}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline text-sm font-medium ml-1"
+              >
+                [link]
+              </a>
+            )}
+          </p>
 
-                        {idx < pub.authors.length - 1 && ', '}
-                      </span>
-                    ))}
-                  </p>
+          {pub.description && (
+            <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
+              {pub.description}
+            </p>
+          )}
 
-                  <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
-                    <span className="italic font-semibold">
-                      {pub.journal || pub.conference}
-                    </span>
-                    {pub.volume && `, ${pub.volume}`}
-                    {pub.pages && `, ${pub.pages}`}
-                    {pub.year && ` (${pub.year})`}
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {pub.doi && (
+              <a
+                href={`https://doi.org/${pub.doi}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+              >
+                DOI
+              </a>
+            )}
 
-                    {(pub.url || pub.doi) && (
-                      <a
-                        href={pub.url ?? `https://doi.org/${pub.doi}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent hover:underline text-sm font-medium ml-1"
-                      >
-                        [link]
-                      </a>
-                    )}
-                  </p>
-
-                  {pub.description && (
-                    <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
-                      {pub.description}
-                    </p>
-                  )}
-
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {pub.doi && (
-                      <a
-                        href={`https://doi.org/${pub.doi}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                      >
-                        DOI
-                      </a>
-                    )}
-
-                    {pub.code && (
-                      <a
-                        href={pub.code}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                      >
-                        {messages.publications.code}
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))
-        )}
+            {pub.code && (
+              <a
+                href={pub.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+              >
+                {messages.publications.code}
+              </a>
+            )}
+          </div>
+        </div>
       </div>
     </div>
-  );
-}
+  ))
+)}
